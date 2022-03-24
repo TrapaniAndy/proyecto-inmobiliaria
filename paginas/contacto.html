@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="shortcut icon" href="../IMG/logo/flaticon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="barraNavegacion">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              src="../IMG/logo/logo.png"
+              class="imgLogo"
+              alt="ROSSE Inmobiliaria"
+              title="ROSSE Inmobiliaria"
+          /></a>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../paginas/alquiler.html">Alquiler</a>
+            </li>
+            <li>
+              <a href="../paginas/venta.html">Venta</a>
+            </li>
+            <li>
+              <a href="../paginas/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="../paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contacto">
+      
+      <h1>Contáctanos</h1>
+
+      <form class="formulario">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label for="apellidoynombre">Apellido y Nombre:</label>
+          <input type="text" name="apellidoynombre" required placeholder="Apellido y Nombre"/>
+          <label for="tel">Teléfono:</label>
+          <input type="text" name="tel" required placeholder="Teléfono"/>
+          <label for="correo">E-mail:</label>
+          <input
+            type="email"
+            name="correo"
+            placeholder="Correo"
+            required
+          />
+          <label for="mensaje">Mensaje:</label>
+          <div>
+          <textarea
+              name="mensaje"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Dejanos tu mensaje">
+            </textarea>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información sobre la Propiedad</legend>
+          <label for="opcion">Alquila, Compra, Vende</label>
+          <select name="opcion" id="">
+            <option value="" disabled selected>Seleccione</option>
+            <option value="compra">Compra</option>
+            <option value="alquiler">Alquiler</option>
+            <option value="venta">Venta</option>
+          </select>
+        </fieldset>
+
+        <fieldset >
+          <legend>Política de Privacidad</legend>
+          <div>
+          <input type="checkbox" name="" class="checkbox"/>
+          <label for="acepta" class="labelTermino" >
+            He leído y acepto la cláusula de protección de datos y aviso
+            legal.</label>
+          </div>
+        </fieldset>
+
+        <div>
+        <input type="submit" class="boton botonEnviar" value="Enviar" />
+      </div>
+      </form>
+    </main>
+
+    <section class="ubicacion">
+      <div class="titulo">
+        <p>Nuestra Ubicación</p>
+      </div>
+
+      <div class="contenedorUbicacion">
+        <div class="datosUbicacion">
+        <p class="textoNombre">ROSSE Inmobiliaria</p>
+        <p>rosseinmobiliaria@gmail.com</p>
+        <p>https://www.rosseinmobiliaria.com</p>
+        <img src="../IMG/whatsapp.png" id="id_redes" alt="Logo Whatsapp" />
+        <a> + (34) 657 389532</a><br />
+        <img src="../IMG/mapa.png" id="id_redes" alt="Logo Ubicacion" />
+        <a>C/ Marina 148 loc 1 Barcelona - 08026 <br> (Barcelona)</a>
+      </div>
+
+      <div class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.914810916357!2d2.181165414618933!3d41.397656379263196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2e1c93b331b%3A0x2d4f361b9254c62d!2sCarrer%20de%20la%20Marina%2C%20148%2C%2008013%20Barcelona!5e0!3m2!1ses-419!2ses!4v1645888349166!5m2!1ses-419!2ses"
+          width="900"
+          height="450px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="copyright">
+        &copy ROSSE Inmobiliaria - Todos los derechos reservados
+      </p>
+      <div>
+        <img src="../IMG/facebook.png" id=id_redessociales alt="logo facebook" />
+        <img src="../IMG/instagram.png" id=id_redessociales alt="logo instagram" />
+        <img src="../IMG/linkedin.png" id=id_redessociales alt="logo linkedin" />
+      </div>
+    </footer>
+  </body>
+</html>
