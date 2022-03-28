@@ -82,7 +82,7 @@ ul a:hover{
 
 .titulo p{
     color:#333333;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin: 50px;
     padding: 10px;
@@ -114,7 +114,7 @@ ul a:hover{
 
 h1 , h2{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: #333333;
     margin-top: 30px;
 }
@@ -129,6 +129,7 @@ h1 , h2{
     font-weight: bold;
     margin: 5px;
 }
+
 
 /* ---         BOTONES    --- */
 .boton{
@@ -163,6 +164,7 @@ h1 , h2{
     max-height: 200px;
     width: 350px;
 }
+
 
 /* --- ICONOS REDES SOCIALES Y UBICACIÓN --- */
 
@@ -244,6 +246,14 @@ margin-bottom: 15px;}
 .copyright{
     color:ghostwhite;
     font-size: 18px;
+}
+
+.transition{
+    transition: font-size 2s;
+}
+
+.transition:hover{
+    font-size: 30px;
 }
 
 
