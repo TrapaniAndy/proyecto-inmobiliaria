@@ -307,13 +307,6 @@ select {
 }
 
 
-.transicion{
-    transition: font-size 3s;
-}
-
-.transicion:hover{
-    font-size: 45px;
-}
 /* ---------------------- RESPONSIVE DESING: TABLET 1024px ----------------- */
 @media screen and (max-width: 1024px) {
   body {
