@@ -306,6 +306,15 @@ select {
   margin-top: 20px;
 }
 
+/* -------- Transiciones aplicadas a los títulos ----- */
+
+.transition{
+    transition: font-size 3s;
+}
+
+.transition:hover{
+    font-size: 35px;
+}
 
 /* ---------------------- RESPONSIVE DESING: TABLET 1024px ----------------- */
 @media screen and (max-width: 1024px) {
