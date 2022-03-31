@@ -75,6 +75,7 @@ ul a:hover {
 
 /* ------------ MAIN  ANUNCIOS TODOS------------------- */
 
+<<<<<<< HEAD
 .titulo p {
   color: #333333;
   font-size: 30px;
@@ -82,6 +83,15 @@ ul a:hover {
   margin: 50px;
   padding: 10px;
   text-align: center;
+=======
+.titulo p{
+    color:#333333;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+>>>>>>> nueva-rama
 }
 
 .AnunciosTodos {
@@ -107,12 +117,20 @@ ul a:hover {
   align-items: center;
 }
 
+<<<<<<< HEAD
 h1,
 h2 {
   text-align: center;
   font-size: 30px;
   color: #333333;
   margin-top: 30px;
+=======
+h1 , h2{
+    text-align: center;
+    font-size: 25px;
+    color: #333333;
+    margin-top: 30px;
+>>>>>>> nueva-rama
 }
 
 .texto p {
@@ -125,6 +143,7 @@ h2 {
   font-weight: bold;
   margin: 5px;
 }
+
 
 /* ---         BOTONES    --- */
 .boton {
@@ -159,6 +178,7 @@ h2 {
   max-height: 200px;
   width: 350px;
 }
+
 
 /* --- ICONOS REDES SOCIALES Y UBICACIÓN --- */
 
@@ -470,7 +490,7 @@ select {
 
   .contenedorNosotros {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;git 
     line-height: 40px;
     align-items: center;
     justify-content: space-evenly;
