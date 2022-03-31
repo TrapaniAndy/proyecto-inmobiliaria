@@ -75,15 +75,6 @@ ul a:hover {
 
 /* ------------ MAIN  ANUNCIOS TODOS------------------- */
 
-<<<<<<< HEAD
-.titulo p {
-  color: #333333;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 50px;
-  padding: 10px;
-  text-align: center;
-=======
 .titulo p{
     color:#333333;
     font-size: 25px;
@@ -91,7 +82,6 @@ ul a:hover {
     margin: 50px;
     padding: 10px;
     text-align: center;
->>>>>>> nueva-rama
 }
 
 .AnunciosTodos {
@@ -117,20 +107,11 @@ ul a:hover {
   align-items: center;
 }
 
-<<<<<<< HEAD
-h1,
-h2 {
-  text-align: center;
-  font-size: 30px;
-  color: #333333;
-  margin-top: 30px;
-=======
 h1 , h2{
     text-align: center;
     font-size: 25px;
     color: #333333;
     margin-top: 30px;
->>>>>>> nueva-rama
 }
 
 .texto p {
@@ -325,6 +306,14 @@ select {
   margin-top: 20px;
 }
 
+
+.transicion{
+    transition: font-size 3s;
+}
+
+.transicion:hover{
+    font-size: 45px;
+}
 /* ---------------------- RESPONSIVE DESING: TABLET 1024px ----------------- */
 @media screen and (max-width: 1024px) {
   body {
@@ -490,10 +479,21 @@ select {
 
   .contenedorNosotros {
     display: flex;
-    flex-direction: column;git 
+    flex-direction: column;
     line-height: 40px;
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.copyright{
+    color:ghostwhite;
+    font-size: 18px;
+}
+
+/*--------- PÁGINA INTERNA CONTACTO-------- */
+
+.formulario{
+    margin: auto;
+    width: 50%;
     padding: 10px;
   }
 
