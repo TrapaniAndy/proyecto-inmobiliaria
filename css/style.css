@@ -13,7 +13,7 @@ body {
 header {
   width: 100%;
   height: 80px;
-  background-color: #333333;
+  background-color: #2f4f4f;
 }
 
 .barraNavegacion {
@@ -302,7 +302,7 @@ select {
 .botonEnviar {
   width: 90px;
   position: relative;
-  left: 585px;
+  left: 593px;
   margin-top: 20px;
 }
 
@@ -348,7 +348,7 @@ select {
     color: ghostwhite;
     font-size: 25px;
     position: relative;
-    top: 200px;
+    top: 455px;
     margin-left: 20px;
   }
   /* --------   MAIN  -------------*/
@@ -574,7 +574,7 @@ select {
     color: ghostwhite;
     font-size: 25px;
     position: relative;
-    top: 200px;
+    top: 350px;
     margin-left: 20px;
   }
   /* --------   MAIN  -------------*/
@@ -602,10 +602,22 @@ select {
   .anuncio {
     border: 2px solid #333333;
     height: 600px;
-    width: 350px;
+    width: 400px;
     padding: 5px;
     margin-top: 20px;
   }
+
+.iconosCaracteristicas {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#id_icono {
+    height: 40px;
+    margin-top: 10px;
+} 
 
   .boton {
     text-decoration: none;
@@ -617,13 +629,35 @@ select {
     border-style: solid;
     border-color: #28a745;
     background-color: transparent;
+}
+.botonPropiedad {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 65px;
+}
+
+
+/* ---- IMAGEN de ANUNCIOS DE ALQUILER Y VENTA ------ */
+
+#id_img {
+    max-height: 500px;
+    width: 400px;
   }
 
+  
   /* --------- Sección Nosotros -------- */
 
   .sobreNosotros {
     grid-row: 6;
     grid-column: 1/5;
+}
+
+.nosotrosDescripcion p {
+    color: #333333;
+    font-size: 20px;
+    margin: 0px 15px 10px 15px;
+    text-align: justify;
   }
 
   /*      ----- Sección Ubicación ---- */
@@ -641,7 +675,7 @@ select {
 
   .datosUbicacion {
     color: #333333;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 30px;
     margin-left: 0px;
   }
@@ -687,6 +721,12 @@ select {
     grid-column: 1/5;
   }
 
+.formulario {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+  }
+
   legend {
     font-size: 20px;
   }
@@ -711,7 +751,7 @@ select {
   .botonEnviar {
     width: 80px;
     position: relative;
-    left: 275px;
+    left: 497px;
     margin-top: 20px;
   }
 }
@@ -802,14 +842,14 @@ top: 350px;
   .anuncio {
     border: 2px solid #333333;
     height: 600px;
-    width: 250px;
+    width: 350px;
     padding: 5px;
     margin: 10px;
   }
 
   #id_img {
     max-height: 500px;
-    width: 250px;
+    width: 350px;
   }
 
   .iconosCaracteristicas {
@@ -841,6 +881,12 @@ top: 350px;
     margin: 5px;
   }
 
+  #id_icono {
+    height: 40px;
+    margin-top: 0px;
+  }  
+
+
   /* -------- BOTONES --------------- */
   .boton {
     text-decoration: none;
@@ -857,9 +903,8 @@ top: 350px;
   .botonPropiedad {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
+    align-items: flex-start;
+}
 
   .boton:hover {
     color: ghostwhite;
@@ -935,8 +980,8 @@ top: 350px;
   }
 
   #id_redessociales {
-    height: 7vh;
-    margin-left: 20px;
+    height: 6vh;
+    margin-left: 18px;
   }
   /* --------- Pagina Interna NOSOTROS ---------- */
 
@@ -951,9 +996,7 @@ top: 350px;
   .nosotrosImagen img {
     height: 50vh;
     width: 85vw;
-    /*             height: 210px;
-width: 275px; */
-  }
+}
   .nosotrosDescripcion p {
     color: #333333;
     font-size: 15px;
@@ -968,7 +1011,7 @@ width: 275px; */
   }
 
   .formulario {
-    width: 350px;
+    width: 380px;
   }
 
   legend {
@@ -987,13 +1030,14 @@ width: 275px; */
   .botonEnviar {
     width: 80px;
     position: relative;
-    left: 271px;
+    left: 300px;
     margin-top: 20px;
   }
 }
 
 /* -------------   RESPONSIVE DESIGN MOVIL 375PX     ----------------- */
-@media screen and (max-width: 375px) {
+
+@media (max-width:375px) and (min-width: 320px) {
   body {
     display: grid;
     grid-template-columns: auto;
@@ -1078,21 +1122,21 @@ top: 350px;
   .anuncio {
     border: 2px solid #333333;
     height: 600px;
-    width: 300px;
+    width: 85%;
     padding: 5px;
     margin: 10px;
   }
 
   #id_img {
     max-height: 500px;
-    width: 300px;
+    width: 100%;
   }
 
   .iconosCaracteristicas {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-top: 15px;
   }
@@ -1178,7 +1222,7 @@ top: 350px;
 
   .datosUbicacion {
     color: #333333;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     margin-left: 0px;
   }
@@ -1188,7 +1232,7 @@ top: 350px;
   }
 
   iframe {
-    width: 270px;
+    width: 100%;
     height: 170px;
   }
 
@@ -1203,7 +1247,7 @@ top: 350px;
     grid-row: 5;
     background-color: #2f4f4f;
     margin-top: 25px;
-    height: 70px;
+    height: 75px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1213,7 +1257,7 @@ top: 350px;
 
   .copyright {
     color: ghostwhite;
-    font-size: 15px;
+    font-size: 14px;
   }
 
   #id_redessociales {
@@ -1228,7 +1272,7 @@ top: 350px;
     flex-direction: column;
     line-height: 18px;
     height: 600px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 10px;
   }
   .nosotrosImagen img {
@@ -1251,7 +1295,7 @@ width: 275px; */
   }
 
   .formulario {
-    width: 250px;
+    width: 320px;
   }
 
   legend {
@@ -1270,7 +1314,7 @@ width: 275px; */
   .botonEnviar {
     width: 80px;
     position: relative;
-    left: 170px;
+    left: 238px;
     margin-top: 20px;
   }
 }
