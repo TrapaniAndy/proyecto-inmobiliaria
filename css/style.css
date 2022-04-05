@@ -10,54 +10,24 @@ body {
 
 /* ---------- HEADER -------------*/
 
-header {
+
+.barraPropia{
   width: 100%;
   height: 80px;
-  background-color: #333333;
-}
-
-.barraNavegacion {
   background-color: #2f4f4f;
-  padding: 0px;
-  position: fixed;
-  top: 0px;
-  height: 80px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  z-index: 9999;
+
 }
 
-.logo {
-  width: 150px;
-  position: relative;
-  top: 15px;
-  margin-left: 15px;
+#color{
+  color: #e1e1e1;
+  font-size: 20px;
 }
 
-.logo img {
-  width: 170px;
-  height: 50px;
-}
 
-.menu ul li {
-  display: inline-block;
-  font-size: 22px;
-  margin: 0px 20px;
-  position: relative;
-  top: 20px;
+/* #Logo{
+  height: 45px;
 }
-
-.menu ul a {
-  text-decoration: none;
-  color: ghostwhite;
-}
-
-ul a:hover {
-  color: lightgray;
-}
-
+ */
 .tituloIMG {
   background-image: url(../IMG/header.jpg);
   background-position: center center;
@@ -67,19 +37,28 @@ ul a:hover {
 
 .tituloIMG p {
   color: ghostwhite;
-  font-size: 30px;
+  font-size: 1.5rem;
   position: relative;
-  top: 450px;
+  top: 400px;
   margin-left: 20px;
+}
+
+.titulo p{
+  color:#333333;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------------ MAIN  ANUNCIOS TODOS------------------- */
 
 .titulo p{
     color:#333333;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 50px;
+    margin: 40px;
     padding: 10px;
     text-align: center;
 }
@@ -93,10 +72,10 @@ ul a:hover {
 
 .anuncio {
   border: 2px solid #333333;
-  height: 600px;
-  width: 350px;
+  height: 650px;
+  width: 370px;
   padding: 5px;
-  margin: 3px;
+  margin-top: 20px;
 }
 
 .iconosCaracteristicas {
@@ -130,7 +109,7 @@ h1 , h2{
 .boton {
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   padding: 3px;
   color: #28a745;
   border-radius: 5px;
@@ -172,74 +151,72 @@ h1 , h2{
 }
 
 #id_redessociales {
-  height: 35px;
-  margin-left: 20px;
+  width: 6%;
 }
 
 /* ---- SECCION SOBRE NOSOTROS ----*/
 
-.sobreNosotros {
-  margin-bottom: 15px;
-  padding: 5px;
-  color: #333333;
-}
+  /* --------- Pagina Interna NOSOTROS ---------- */
 
-.contenedorNosotros {
-  display: flex;
-  flex-direction: row;
-  line-height: 40px;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 10px;
-}
 
-.nosotrosDescripcion p {
-  color: #333333;
-  font-size: 20px;
-  margin: 0px 10px 10px 10px;
-  text-align: justify;
+  .nosotrosImagen{
+    display: flex;
+  
+  }
+  .nosotrosImagen img {
+    height: auto;
+    width: 80%;
 }
+  .nosotrosDescripcion p {
+    color: #333333;
+    font-size: 15px;
+    margin: 5px 5px 0px 5px;
+    text-align: justify;
+  }
 
 /* ---------- SECCION UBICACION ---------- */
-
 .contenedorUbicacion {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
 }
 
 .datosUbicacion {
   color: #333333;
   font-size: 20px;
-  line-height: 30px;
-  margin-left: 0px;
+  line-height: 25px;
+  width: 350px;
+  padding-top: 10px;
 }
 .textoNombre {
   font-weight: bold;
 }
 
-.mapa {
-  margin-bottom: 15px;
-}
 
 /* --------     FOOTER     --------*/
 
-.footer {
+footer {
   background-color: #2f4f4f;
   margin-top: 50px;
-  height: 75px;
+  height: 80px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+
 }
 
 .copyright {
   color: ghostwhite;
   font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+
+.iconosredes{
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  
 }
 
 /*--------- PÁGINA INTERNA CONTACTO-------- */
@@ -255,19 +232,18 @@ fieldset {
 }
 
 legend {
-  font-size: 25px;
+  font-size: 22px;
   color: black;
-  padding: 10px;
+  text-decoration: underline;
 }
 
 label {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #333333;
   display: block;
   margin: 10px 3px;
 }
-
 input {
   margin: auto;
   background-color: #e1e1e1;
@@ -277,16 +253,10 @@ input {
   height: 30px;
 }
 
-textarea {
-  background-color: #e1e1e1;
-  border-radius: 5px;
-  border: none;
-  width: 100%;
-}
 
 select {
-  width: 250px;
-  font-size: 17px;
+  width: 50%;
+  font-size: 15px;
 }
 
 .labelTermino {
@@ -299,11 +269,9 @@ select {
   width: 16px;
 }
 
-.botonEnviar {
-  width: 90px;
-  position: relative;
-  left: 585px;
-  margin-top: 20px;
+.colorbtn{
+  color: ghostwhite;
+  background-color: #28a745 
 }
 
 /* -------- Transiciones aplicadas a los títulos ----- */
@@ -316,961 +284,3 @@ select {
     font-size: 35px;
 }
 
-/* ---------------------- RESPONSIVE DESING: TABLET 1024px ----------------- */
-@media screen and (max-width: 1024px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, auto);
-  }
-
-  header {
-    grid-row: 1;
-    grid-column: 1/5;
-    font-size: 5px;
-  }
-
-  .logo img {
-    width: 145px;
-    height: 45px;
-  }
-
-  .menu ul li {
-    font-size: 18px;
-  }
-
-  .tituloIMG {
-    grid-row: 2;
-    grid-column: 1/5;
-  }
-
-  .tituloIMG p {
-    color: ghostwhite;
-    font-size: 25px;
-    position: relative;
-    top: 200px;
-    margin-left: 20px;
-  }
-  /* --------   MAIN  -------------*/
-
-  main {
-    grid-row: 3/5;
-    grid-column: 1/5;
-  }
-
-  .titulo p {
-    color: #333333;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px;
-    text-align: center;
-  }
-
-  .AnunciosTodos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-  }
-
-  .anuncio {
-    border: 2px solid #333333;
-    height: 730px;
-    width: 280px;
-    padding: 10px;
-    margin-top: 20px;
-  }
-
-  .boton {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 5px;
-    color: #28a745;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #28a745;
-    background-color: transparent;
-    position: relative;
-    top: 20px;
-  }
-
-  #id_img {
-    height: 47vh;
-    width: 27vw;
-  }
-  /* --- ICONOS REDES SOCIALES Y UBICACIÓN --- */
-
-  #id_icono {
-    height: 50px;
-    margin-top: 50px;
-  }
-  #id_redes {
-    height: 35px;
-  }
-
-  #id_redessociales {
-    height: 35px;
-    margin-left: 20px;
-  }
-
-  /* --------- Sección Nosotros -------- */
-
-  .sobreNosotros {
-    grid-row: 6;
-    grid-column: 1/5;
-    margin-bottom: 15px;
-    padding: 5px;
-    color: #333333;
-  }
-
-  .contenedorNosotros {
-    display: flex;
-    flex-direction: row;
-    line-height: 40px;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 20px;
-    margin: 0px 10px 10px 10px;
-    text-align: justify;
-  }
-
-  /*      ----- Sección Ubicación ---- */
-
-  .ubicacion {
-    grid-row: 7;
-    grid-column: 1/5;
-  }
-  .contenedorUbicacion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .datosUbicacion {
-    color: #333333;
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 0px;
-  }
-  .textoNombre {
-    font-weight: bold;
-  }
-
-  iframe {
-    width: 500px;
-    height: 350px;
-    margin-bottom: 15px;
-  }
-
-  /*  ------- Sección Footer ------- */
-
-  .footer {
-    grid-row: 8;
-    grid-column: 1/5;
-    justify-content: space-around;
-  }
-
-  /* ----- Página Interna - Seccion Nosotros ----- */
-
-  .contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-    align-items: center;
-}
-
-.copyright{
-    color:ghostwhite;
-    font-size: 18px;
-}
-
-/*--------- PÁGINA INTERNA CONTACTO-------- */
-
-.formulario{
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
-
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 20px;
-    margin: 0px 10px 10px 10px;
-    text-align: justify;
-  }
-
-  /* ---- Página Interna - Seccion Contacto  ---- */
-
-  .contacto {
-    grid-column: 1/5;
-  }
-  .formulario {
-    margin: auto;
-    width: 60%;
-    padding: 10px;
-  }
-
-  legend {
-    font-size: 20px;
-  }
-
-  label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333;
-    display: block;
-    margin: 10px 3px;
-  }
-
-  select {
-    width: 250px;
-    font-size: 16px;
-  }
-
-  .botonEnviar {
-    width: 80px;
-    position: relative;
-    left: 536px;
-    margin-top: 20px;
-  }
-}
-/* ---------------------- RESPONSIVE DESING: TABLET 765px ----------------- */
-
-@media screen and (max-width: 768px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, auto);
-  }
-
-  header {
-    grid-row: 1;
-    grid-column: 1/5;
-    font-size: 5px;
-  }
-
-  .logo img {
-    width: 145px;
-    height: 45px;
-  }
-
-  .menu ul li {
-    font-size: 18px;
-  }
-
-  .tituloIMG {
-    grid-row: 2;
-    grid-column: 1/5;
-  }
-
-  .tituloIMG p {
-    color: ghostwhite;
-    font-size: 25px;
-    position: relative;
-    top: 200px;
-    margin-left: 20px;
-  }
-  /* --------   MAIN  -------------*/
-
-  main {
-    grid-row: 3/5;
-    grid-column: 1/5;
-  }
-
-  .titulo p {
-    color: #333333;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 15px;
-    text-align: center;
-  }
-
-  .AnunciosTodos {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-  }
-
-  .anuncio {
-    border: 2px solid #333333;
-    height: 600px;
-    width: 350px;
-    padding: 5px;
-    margin-top: 20px;
-  }
-
-  .boton {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 3px;
-    color: #28a745;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #28a745;
-    background-color: transparent;
-  }
-
-  /* --------- Sección Nosotros -------- */
-
-  .sobreNosotros {
-    grid-row: 6;
-    grid-column: 1/5;
-  }
-
-  /*      ----- Sección Ubicación ---- */
-
-  .ubicacion {
-    grid-row: 7;
-    grid-column: 1/5;
-  }
-  .contenedorUbicacion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-
-  .datosUbicacion {
-    color: #333333;
-    font-size: 15px;
-    line-height: 30px;
-    margin-left: 0px;
-  }
-  .textoNombre {
-    font-weight: bold;
-  }
-
-  iframe {
-    width: 400px;
-    height: 350px;
-    margin-bottom: 15px;
-  }
-
-  /*  ------- Sección Footer ------- */
-
-  .footer {
-    grid-row: 8;
-    grid-column: 1/5;
-    justify-content: space-around;
-  }
-
-  /* ----- Página Interna - Seccion Nosotros ----- */
-
-  .contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 20px;
-    margin: 0px 10px 10px 10px;
-    text-align: justify;
-  }
-
-  /* ---- Página Interna - Seccion Contacto  ---- */
-
-  .contacto {
-    grid-column: 1/5;
-  }
-
-  legend {
-    font-size: 20px;
-  }
-
-  label {
-    font-size: 15px;
-    font-weight: bold;
-    color: #333333;
-    display: block;
-    margin: 10px 3px;
-  }
-
-  select {
-    width: 250px;
-    font-size: 15px;
-  }
-
-  .checkbox {
-    width: 15px;
-  }
-
-  .botonEnviar {
-    width: 80px;
-    position: relative;
-    left: 275px;
-    margin-top: 20px;
-  }
-}
-
-/* --------------    RESPONSIVE DESING: MOVIL 425px  ------------------ */
-
-/* -----RESPONSIVE DESIGN MOVIL 425PX ---- */
-@media screen and (max-width: 425px) {
-  body {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, auto);
-  }
-
-  header {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    height: 200px;
-    background-color: fff;
-  }
-
-  .barraNavegacion {
-    height: 200px;
-    display: block;
-    position: absolute;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
-  .logo img {
-    width: 150px;
-    height: 40px;
-  }
-
-  .menu {
-    display: block;
-    font-size: 18px;
-  }
-  .menu ul li {
-    display: block;
-    font-size: 18px;
-  }
-
-  /*--- Esta imagen la oculté en la vista Móvil, ya que ocupa demasiado espacio y no me gusta como se ve. Quizás luego cuando veamos como hacer el menú hamburguesa vea si la dejo o no.-- */
-
-  .tituloIMG {
-    display: none;
-  }
-
-  /*  .tituloIMG{ 
-grid-column: 1/5;
-grid-row: 2;
-background-image: url(../IMG/header.jpg);
-background-position: center center;
-background-size: cover;
-height: 100vh;
-} 
-
-.tituloIMG p{
-color: ghostwhite;
-font-size: 15px;
-position: relative;
-top: 350px;
-}*/
-
-  main {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .titulo p {
-    color: #333333;
-    font-size: 23px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .AnunciosTodos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .anuncio {
-    border: 2px solid #333333;
-    height: 600px;
-    width: 250px;
-    padding: 5px;
-    margin: 10px;
-  }
-
-  #id_img {
-    max-height: 500px;
-    width: 250px;
-  }
-
-  .iconosCaracteristicas {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  h1,
-  h2 {
-    text-align: center;
-    font-size: 25px;
-    color: #333333;
-    margin-top: 30px;
-  }
-
-  .texto p {
-    margin-top: 10px;
-    font-size: 15px;
-    padding: 5px;
-    text-align: justify;
-  }
-
-  .precio {
-    font-weight: bold;
-    margin: 5px;
-  }
-
-  /* -------- BOTONES --------------- */
-  .boton {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 3px;
-    color: #28a745;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #28a745;
-    background-color: transparent;
-  }
-
-  .botonPropiedad {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .boton:hover {
-    color: ghostwhite;
-    background-color: #28a745;
-    box-shadow: 5px 5px 5px lightslategrey;
-  }
-  /* --------- Sección Sobre Nosotros ---------- */
-
-  .sobreNosotros {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 17px;
-    margin: 0px 15px 10px 15px;
-    text-align: justify;
-  }
-
-  /* ------------ Sección Ubicación ------------ */
-
-  .ubicacion {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .contenedorUbicacion {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    justify-content: space-between;
-  }
-
-  .datosUbicacion {
-    color: #333333;
-    font-size: 17px;
-    line-height: 20px;
-    margin-left: 0px;
-  }
-
-  .textoNombre {
-    font-weight: bold;
-  }
-
-  iframe {
-    width: 350px;
-    height: 200px;
-  }
-
-  #id_redes {
-    height: 25px;
-  }
-
-  /* ---------  Sección Footer ----------- */
-
-  .footer {
-    grid-column: 1;
-    grid-row: 5;
-    background-color: #2f4f4f;
-    margin-top: 25px;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .copyright {
-    color: ghostwhite;
-    font-size: 15px;
-  }
-
-  #id_redessociales {
-    height: 7vh;
-    margin-left: 20px;
-  }
-  /* --------- Pagina Interna NOSOTROS ---------- */
-
-  .contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    line-height: 22px;
-    height: 600px;
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-  .nosotrosImagen img {
-    height: 50vh;
-    width: 85vw;
-    /*             height: 210px;
-width: 275px; */
-  }
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 15px;
-    margin: 15px 10px 0px 10px;
-    text-align: justify;
-  }
-
-  /* ------- Página Interna CONTACTO ----------- */
-
-  .contacto {
-    grid-column: 1;
-  }
-
-  .formulario {
-    width: 350px;
-  }
-
-  legend {
-    font-size: 18px;
-  }
-
-  select {
-    width: 226px;
-    font-size: 14px;
-  }
-
-  .checkbox {
-    width: 13px;
-  }
-
-  .botonEnviar {
-    width: 80px;
-    position: relative;
-    left: 271px;
-    margin-top: 20px;
-  }
-}
-
-/* -------------   RESPONSIVE DESIGN MOVIL 375PX     ----------------- */
-@media screen and (max-width: 375px) {
-  body {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(5, auto);
-  }
-
-  header {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    height: 200px;
-    background-color: fff;
-  }
-
-  .barraNavegacion {
-    height: 200px;
-    display: block;
-    position: absolute;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
-  .logo img {
-    width: 150px;
-    height: 40px;
-  }
-
-  .menu {
-    display: block;
-    font-size: 18px;
-  }
-  .menu ul li {
-    display: block;
-    font-size: 18px;
-  }
-
-  /*--- Esta imagen la oculté en la vista Móvil, ya que ocupa demasiado espacio y no me gusta como se ve. Quizás luego cuando veamos como hacer el menú hamburguesa vea si la dejo o no.-- */
-
-  .tituloIMG {
-    display: none;
-  }
-
-  /*  .tituloIMG{ 
-grid-column: 1/5;
-grid-row: 2;
-background-image: url(../IMG/header.jpg);
-background-position: center center;
-background-size: cover;
-height: 100vh;
-} 
-
-.tituloIMG p{
-color: ghostwhite;
-font-size: 15px;
-position: relative;
-top: 350px;
-}*/
-
-  /*--------  Main -----------*/
-
-  main {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .titulo p {
-    color: #333333;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .AnunciosTodos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .anuncio {
-    border: 2px solid #333333;
-    height: 600px;
-    width: 300px;
-    padding: 5px;
-    margin: 10px;
-  }
-
-  #id_img {
-    max-height: 500px;
-    width: 300px;
-  }
-
-  .iconosCaracteristicas {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  h1,
-  h2 {
-    text-align: center;
-    font-size: 25px;
-    color: #333333;
-    margin-top: 30px;
-  }
-
-  .texto p {
-    margin-top: 10px;
-    font-size: 15px;
-    padding: 5px;
-    text-align: justify;
-  }
-
-  .precio {
-    font-weight: bold;
-    margin: 5px;
-  }
-  
-  #id_icono {
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  /* -------- BOTONES --------------- */
-  .boton {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
-    padding: 3px;
-    color: #28a745;
-    border-radius: 5px;
-    border-style: solid;
-    border-color: #28a745;
-    background-color: transparent;
-  }
-
-  .botonPropiedad {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 0px;
-  }
-
-  .boton:hover {
-    color: ghostwhite;
-    background-color: #28a745;
-    box-shadow: 5px 5px 5px lightslategrey;
-  }
-
-  /* --------- Sección Sobre Nosotros ---------- */
-
-  .sobreNosotros {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 15px;
-    margin: 0px 10px 10px 10px;
-    text-align: justify;
-  }
-
-  /* ------------ Sección Ubicación ------------ */
-
-  .ubicacion {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .contenedorUbicacion {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    justify-content: space-between;
-  }
-
-  .datosUbicacion {
-    color: #333333;
-    font-size: 15px;
-    line-height: 20px;
-    margin-left: 0px;
-  }
-
-  .textoNombre {
-    font-weight: bold;
-  }
-
-  iframe {
-    width: 270px;
-    height: 170px;
-  }
-
-  #id_redes {
-    height: 25px;
-  }
-
-  /* ---------  Sección Footer ----------- */
-
-  .footer {
-    grid-column: 1;
-    grid-row: 5;
-    background-color: #2f4f4f;
-    margin-top: 25px;
-    height: 70px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .copyright {
-    color: ghostwhite;
-    font-size: 15px;
-  }
-
-  #id_redessociales {
-    height: 22px;
-    margin-left: 20px;
-  }
-
-  /* --------- Pagina Interna NOSOTROS ---------- */
-
-  .contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    line-height: 18px;
-    height: 600px;
-    justify-content: space-between;
-    padding: 10px;
-  }
-  .nosotrosImagen img {
-    height: 50vh;
-    width: 85vw;
-    /*             height: 210px;
-width: 275px; */
-  }
-  .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 15px;
-    margin: 15px 10px 0px 10px;
-    text-align: justify;
-  }
-
-  /* ------- Página Interna CONTACTO ----------- */
-
-  .contacto {
-    grid-column: 1;
-  }
-
-  .formulario {
-    width: 250px;
-  }
-
-  legend {
-    font-size: 15px;
-  }
-
-  select {
-    width: 226px;
-    font-size: 13px;
-  }
-
-  .checkbox {
-    width: 13px;
-  }
-
-  .botonEnviar {
-    width: 80px;
-    position: relative;
-    left: 170px;
-    margin-top: 20px;
-  }
-}
