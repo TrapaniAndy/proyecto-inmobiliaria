@@ -71,7 +71,6 @@ body {
   border: 2px solid #333333;
   height: 650px;
   width: 370px;
-/*   padding: 5px; */
   margin-top: 20px;
 }
 
@@ -105,7 +104,7 @@ h1 , h2{
 }
 
 
-/* ---         BOTONES    --- */
+/* ---    BOTONES DE CARS   --- */
 .boton {
   text-decoration: none;
   font-weight: bold;
@@ -132,6 +131,7 @@ h1 , h2{
 }
 
 /* ---- IMAGEN de ANUNCIOS DE ALQUILER Y VENTA ------ */
+
 .contenedorImg{
   display: flex;
   justify-content: center;
@@ -161,8 +161,6 @@ h1 , h2{
 }
 
 /* ---- SECCION SOBRE NOSOTROS ----*/
-
-/* --------- Pagina Interna NOSOTROS ---------- */
 
 .sobreNosotros{
   display: flex;
@@ -244,18 +242,6 @@ footer {
   margin: 15px;
 
 }
-.iconosredes img:hover{
-  animation: icono .5s ease;
-}
-
-@keyframes icono{
-  from{
-    transform: rotate3d(0,0,0,0);
-  }
-  to{
-    transform: rotate3d(0,1,0,360deg);
-  }
-}
 
 /*--------- PÁGINA INTERNA CONTACTO-------- */
 
@@ -315,6 +301,9 @@ select {
   margin-left: 10px;
 }
 
+
+/*  -------------- ANIMACIONES ---------------- */
+
 /* -------- Transiciones aplicadas a los títulos ----- */
 
 .transition{
@@ -325,6 +314,23 @@ select {
   font-size: 35px;
 }
 
+/* ----  Animación footer iconos redes ---- */
+
+.iconosredes img:hover{
+  animation: icono .5s ease;
+}
+
+@keyframes icono{
+  from{
+    transform: rotate3d(0,0,0,0);
+  }
+  to{
+    transform: rotate3d(0,1,0,360deg);
+  }
+}
+
+
+/* --------- Media Query para Desk --------- */
 
 @media screen and (min-width: 1024px){
 
