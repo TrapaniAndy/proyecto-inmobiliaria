@@ -21,13 +21,10 @@ body {
 #color{
   color: #e1e1e1;
   font-size: 20px;
+  background-color: #2f4f4f;
 }
 
 
-/* #Logo{
-  height: 45px;
-}
- */
 .tituloIMG {
   background-image: url(../IMG/header.jpg);
   background-position: center center;
@@ -39,7 +36,7 @@ body {
   color: ghostwhite;
   font-size: 1.5rem;
   position: relative;
-  top: 400px;
+  top: 75%;
   margin-left: 20px;
 }
 
@@ -56,7 +53,7 @@ body {
 
 .titulo p{
     color:#333333;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin: 40px;
     padding: 10px;
@@ -74,7 +71,7 @@ body {
   border: 2px solid #333333;
   height: 650px;
   width: 370px;
-  padding: 5px;
+/*   padding: 5px; */
   margin-top: 20px;
 }
 
@@ -84,11 +81,13 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding-left: 0px;
 }
 
 h1 , h2{
     text-align: center;
     font-size: 25px;
+    font-weight: bold;
     color: #333333;
     margin-top: 30px;
 }
@@ -96,7 +95,8 @@ h1 , h2{
 .texto p {
   margin-top: 10px;
   font-size: 18px;
-  padding: 5px;
+  padding: 7px;
+  text-align: justify;
 }
 
 .precio {
@@ -132,11 +132,17 @@ h1 , h2{
 }
 
 /* ---- IMAGEN de ANUNCIOS DE ALQUILER Y VENTA ------ */
+.contenedorImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
 
 #id_img {
   height: auto;
   max-height: 200px;
-  width: 350px;
+  width: 95%;
 }
 
 
@@ -156,44 +162,51 @@ h1 , h2{
 
 /* ---- SECCION SOBRE NOSOTROS ----*/
 
-  /* --------- Pagina Interna NOSOTROS ---------- */
+/* --------- Pagina Interna NOSOTROS ---------- */
 
+.sobreNosotros{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-  .nosotrosImagen{
-    display: flex;
-  
-  }
-  .nosotrosImagen img {
-    height: auto;
-    width: 80%;
 }
+
+.nosotrosImagen img {
+  height: auto;
+  width:90%;
+  margin-left: 20px;
+}
+
   .nosotrosDescripcion p {
-    color: #333333;
-    font-size: 15px;
-    margin: 5px 5px 0px 5px;
-    text-align: justify;
+  color: #333333;
+  font-size: 18px;
+  text-align: justify;
+  padding-right: 10px;
   }
 
 /* ---------- SECCION UBICACION ---------- */
-.contenedorUbicacion {
+
+.contenedorCentradoUbicacion{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
-  height: 400px;
+  align-items: center;
 }
 
 .datosUbicacion {
   color: #333333;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 25px;
   width: 350px;
   padding-top: 10px;
+  margin-bottom: 20px;
 }
 .textoNombre {
   font-weight: bold;
 }
 
+.mapa{
+height: 300px;
+}
 
 /* --------     FOOTER     --------*/
 
@@ -202,6 +215,14 @@ footer {
   margin-top: 50px;
   height: 80px;
   width: 100%;
+
+}
+
+.contenedorFooter{
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -214,31 +235,50 @@ footer {
 
 .iconosredes{
   display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  
+  justify-content: center;
+  background-color: #2f4f4f;
+  padding: 0px;
+}
+
+.iconosredes img{
+  margin: 15px;
+
+}
+.iconosredes img:hover{
+  animation: icono .5s ease;
+}
+
+@keyframes icono{
+  from{
+    transform: rotate3d(0,0,0,0);
+  }
+  to{
+    transform: rotate3d(0,1,0,360deg);
+  }
 }
 
 /*--------- PÁGINA INTERNA CONTACTO-------- */
 
 .formulario {
   margin: auto;
-  width: 50%;
+  width: 90%;
   padding: 10px;
 }
 
 fieldset {
   padding: 10px;
+  border: 2px solid #d2d2d1;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 legend {
   font-size: 22px;
   color: black;
-  text-decoration: underline;
 }
 
 label {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #333333;
   display: block;
@@ -271,16 +311,28 @@ select {
 
 .colorbtn{
   color: ghostwhite;
-  background-color: #28a745 
+  background-color: #28a745 ;
+  margin-left: 10px;
 }
 
 /* -------- Transiciones aplicadas a los títulos ----- */
 
 .transition{
-    transition: font-size 3s;
+  transition: font-size 3s;
 }
 
 .transition:hover{
-    font-size: 35px;
+  font-size: 35px;
 }
+
+
+@media screen and (min-width: 1024px){
+
+  .formulario {
+    margin: auto;
+    width: 55%;
+    padding: 10px;
+  }
+}
+  
 
