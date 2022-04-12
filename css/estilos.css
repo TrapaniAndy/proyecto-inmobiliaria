@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* ESTILOS GENERALES APLICADOS A TODO EL PROYECTO */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url(../IMG/board.png);
+  font-family: "Titillium Web", sans-serif; }
+
+/* HEADER */
+.barraPropia {
+  width: 100%;
+  height: 80px;
+  background-color: #2f4f4f; }
+
+#color {
+  color: ghostwhite;
+  font-size: 20px;
+  background-color: #2f4f4f; }
+
+.tituloIMG {
+  background-image: url(../IMG/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh; }
+  .tituloIMG p {
+    color: ghostwhite;
+    font-size: 1.5rem;
+    position: relative;
+    top: 75%;
+    margin-left: 20px; }
+
+/* MAIN ANUNCIOS PROPIEDADES */
+.titulo p {
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 40px;
+  padding: 10px;
+  text-align: center; }
+
+.AnunciosTodos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.anuncio {
+  border: 2px solid #333333;
+  height: 650px;
+  width: 370px;
+  margin-top: 20px; }
+
+.iconosCaracteristicas {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0px; }
+
+h1, h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 30px; }
+
+.texto p {
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 7px;
+  text-align: justify; }
+
+.precio {
+  font-weight: bold;
+  margin: 5px; }
+
+/*  BOTONES DE CARS  */
+.boton {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 3px;
+  color: #28a745;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #28a745;
+  background-color: transparent; }
+  .boton:hover {
+    color: ghostwhite;
+    background-color: #28a745;
+    box-shadow: 5px 5px 5px lightslategrey; }
+
+.botonPropiedad {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 65px; }
+
+/*  IMAGENES CARDS  */
+.contenedorImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px; }
+
+#id_img {
+  height: auto;
+  max-height: 200px;
+  width: 95%; }
+
+/* --- ICONOS REDES SOCIALES Y UBICACIÓN --- */
+#id_icono {
+  height: 40px;
+  margin-top: 10px; }
+
+#id_redes {
+  height: 35px; }
+
+#id_redessociales {
+  width: 6%; }
+
+/* SECCION NOSOTROS */
+.sobreNosotros {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+.nosotrosImagen img {
+  height: auto;
+  width: 90%;
+  margin-left: 20px; }
+
+.nosotrosDescripcion p {
+  color: #333333;
+  font-size: 18px;
+  text-align: justify;
+  padding-right: 10px; }
+
+/* SECCION UBICACION  */
+.contenedorCentradoUbicacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.datosUbicacion {
+  color: #333333;
+  font-size: 19px;
+  line-height: 25px;
+  width: 350px;
+  padding-top: 10px;
+  margin-bottom: 20px; }
+
+.textoNombre {
+  font-weight: bold; }
+
+.mapa {
+  height: 300px; }
+
+/*   FOOTER   */
+footer {
+  background-color: #2f4f4f;
+  margin-top: 50px;
+  height: 80px;
+  width: 100%; }
+
+.contenedorFooter {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center; }
+
+.copyright {
+  color: ghostwhite;
+  font-size: 18px;
+  margin: auto;
+  text-align: center; }
+
+.iconosredes {
+  display: flex;
+  justify-content: center;
+  background-color: #2f4f4f;
+  padding: 0px; }
+
+.iconosredes img {
+  margin: 15px; }
+
+/*   ANIMACIONES  */
+/* Transiciones aplicadas a los títulos  */
+.transition {
+  transition: font-size 3s; }
+
+.transition:hover {
+  font-size: 35px; }
+
+/* Animación footer iconos redes */
+.iconosredes img:hover {
+  animation: icono .5s ease; }
+
+@keyframes icono {
+  from {
+    transform: rotate3d(0, 0, 0, 0); }
+  to {
+    transform: rotate3d(0, 1, 0, 360deg); } }

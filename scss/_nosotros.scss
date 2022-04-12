@@ -1,0 +1,25 @@
+
+/* SECCION NOSOTROS */
+
+.sobreNosotros{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nosotrosImagen{
+    img {
+        height: auto;
+        width:90%;
+        margin-left: 20px;
+}
+}
+
+.nosotrosDescripcion{
+    p {
+        color: $colorTitulos;
+        font-size: 18px;
+        text-align: justify;
+        padding-right: 10px;
+        }
+}

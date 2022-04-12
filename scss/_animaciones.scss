@@ -1,0 +1,30 @@
+/*   ANIMACIONES  */
+
+/* Transiciones aplicadas a los títulos  */
+
+.transition{
+    transition: font-size 3s;
+}
+
+.transition:hover{
+    font-size: 35px;
+}
+
+/* Animación footer iconos redes */
+
+.iconosredes{
+    img{
+        &:hover{
+            animation: icono .5s ease;
+        }
+    }
+}
+
+@keyframes icono{
+    from{
+    transform: rotate3d(0,0,0,0);
+    }
+    to{
+    transform: rotate3d(0,1,0,360deg);
+    }
+}

@@ -1,0 +1,23 @@
+/* SECCION UBICACION  */
+
+.contenedorCentradoUbicacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datosUbicacion {
+    color: $colorTitulos;
+    font-size: 19px;
+    line-height: 25px;
+    width: 350px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.textoNombre {
+    font-weight: bold;
+}
+
+.mapa{
+    height: 300px;
+}

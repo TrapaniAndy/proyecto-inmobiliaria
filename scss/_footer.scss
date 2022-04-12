@@ -1,0 +1,32 @@
+/*   FOOTER   */
+
+footer {
+    background-color: #2f4f4f;
+    margin-top: 50px;
+    height: 80px;
+    width: 100%;
+}
+.contenedorFooter{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: ghostwhite;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.iconosredes{
+    display: flex;
+    justify-content: center;
+    background-color: #2f4f4f;
+    padding: 0px;
+}
+
+.iconosredes img{
+    margin: 15px;
+}
