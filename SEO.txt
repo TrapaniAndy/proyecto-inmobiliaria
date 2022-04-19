@@ -1,0 +1,33 @@
+Optimizaciones SEO realizadas en el Proyecto.
+
+1) Se agregó la equita title en cada página:
+
+
+Index: <title> Inmobiliaria en Barcelona, ROSSE Inmobiliaria</title>
+Alquiler:<title> Alquiler de Propiedades, ROSEE Inmobiliaria</title>
+Venta: <title> Venta de Propiedades, ROSEE Inmobiliaria</title>
+Nosotros: <title> Sobre Nosotros, ROSSE Inmobiliaria</title>
+Contacto: <title >Contacta con Nosotros, ROSSE Inmobiliaria </title>
+
+
+2) Se agregó keywords en todas las páginas:
+
+<meta name="keyword" content="bienes raices, inmobiliaria, inmobiliaria en Barcelona, alquiler, venta, casas, campo, pisos, apartamento, chalet">
+
+3) Se agregó description en cada página:
+
+Index: <meta name="description" content="ROSEE Inmobiliaria, encontrar tu piso o casa en venta y alquiler en Barcelona, contáctanos y resolveremos todas tus necesidades.">
+
+Alquiler: <meta name="description" content="Si esta pensando en vender o alquilar, no dude en contactarnos, le ofrecemos un servicio personalizado, de calidad y confianza.">
+
+Venta: <meta name="description" content="Si esta pensando en vender o alquilar, no dude en contactarnos, le ofrecemos un servicio personalizado, de calidad y confianza.">
+
+Nosotros: <meta name="description" content="Ofrecemos Asesoramiento profesional y eficaz en todos los aspectos del proceso de venta o alquiler.Trabajamos Para conseguir los objetivos de nuestros clientes en un periodo mínimo de tiempo y asegurando la máxima eficacia en todas las fases del proceso.">
+
+Contacto: <meta name="description" content="El equipo de ROSEE Inmobiliaria esta a su disposición para poderle mostrar las propiedades en los horarios mas adecuados a su agenda laboral.">
+
+4) Se optimizó el formato y de las imágenes de todo el proyecto.
+
+5) Se mejoró el contenido de todo el proyecto pero en especificode la página Nosotros.
+
+6) Se agregó etiqueta H1 a todas las páginas del proyecto.
