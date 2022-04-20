@@ -3,7 +3,7 @@ Optimizaciones SEO realizadas en el Proyecto.
 1) Se agregó la equita title en cada página:
 
 
-Index: <title> Inmobiliaria en Barcelona, ROSSE Inmobiliaria</title>
+Index: <title> ROSSE Inmobiliaria</title>
 Alquiler:<title> Alquiler de Propiedades, ROSEE Inmobiliaria</title>
 Venta: <title> Venta de Propiedades, ROSEE Inmobiliaria</title>
 Nosotros: <title> Sobre Nosotros, ROSSE Inmobiliaria</title>
