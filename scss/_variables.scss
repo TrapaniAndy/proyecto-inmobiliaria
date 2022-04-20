@@ -2,3 +2,120 @@ $colorTitulos: #333333;
 $colorBotones:#28a745;
 $colorSecundario:ghostwhite;
 $colorHeader:#2f4f4f;
+$colorBotonVenta: darkgoldenrod;
+
+
+
+/* MAPA */
+
+$tituloscars:(
+    alineacion: center,
+    tFuente: 25px,
+    fontW: bold,
+    color: #333,
+    marginT: 30px,
+);
+
+h2{
+    text-align: map-get($tituloscars, alineacion);
+    font-size: map-get($tituloscars, tFuente);
+    font-weight: map-get($tituloscars, fontW);
+    color: map-get($tituloscars, color);
+    margin-top: map-get($tituloscars, marginT);
+}
+
+/* EXTEND */
+
+/*  BOTONES DE CARS  */
+
+.botonalquiler {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 3px;
+    color: $colorBotones;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: $colorBotones;
+    background-color: transparent;
+
+    &:hover{
+        color: $colorSecundario;
+        background-color: $colorBotones;
+        box-shadow: 5px 5px 5px lightslategrey;     
+    }
+}
+
+.botonventa{
+    @extend .botonalquiler;
+    color: $colorBotonVenta;
+    border-color: $colorBotonVenta;
+    &:hover{
+        color: $colorSecundario;
+        background-color: $colorBotonVenta;
+        box-shadow: 5px 5px 5px lightslategrey;     
+    }
+}
+
+
+/* MIXINS MAIN PROPIEDADES */
+
+@mixin flex-justify ($dflex, $justify){
+    display: $dflex;
+    justify-content: $justify;
+}
+
+.AnunciosTodos {
+    @include flex-justify(flex, space-around);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.iconosCaracteristicas {
+    @include flex-justify(flex,space-evenly);
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.botonPropiedad {
+    @include flex-justify(flex,center);
+    align-items: flex-end;
+    height: 65px;
+}
+
+/*  IMAGENES CARDS  */
+.contenedorImg{
+    @include flex-justify(flex,center);
+    align-items: center;
+    margin-top: 5px;
+}
+
+/* MIXINS PARA LOS TÍTULOS */
+
+@mixin titulosgrales{
+    color: $colorTitulos;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo{
+    h1{
+        @include titulosgrales;
+    }
+}
+    
+.titulo{
+    p{
+        @include titulosgrales;
+    }
+}        
+
+
+
+
+
