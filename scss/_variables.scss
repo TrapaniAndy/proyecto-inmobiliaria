@@ -1,8 +1,8 @@
 $colorTitulos: #333333;
 $colorBotones:#28a745;
 $colorSecundario:ghostwhite;
-$colorHeader:#2f4f4f;
 $colorBotonVenta: darkgoldenrod;
+
 
 
 
@@ -31,9 +31,10 @@ h2{
 .botonalquiler {
     text-decoration: none;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     padding: 3px;
     color: $colorBotones;
+    opacity: 0.8;
     border-radius: 5px;
     border-style: solid;
     border-color: $colorBotones;
@@ -89,7 +90,6 @@ h2{
 .contenedorImg{
     @include flex-justify(flex,center);
     align-items: center;
-    margin-top: 5px;
 }
 
 /* MIXINS PARA LOS TÍTULOS */
@@ -106,6 +106,7 @@ h2{
 .titulo{
     h1{
         @include titulosgrales;
+        margin-top: 8rem;
     }
 }
     

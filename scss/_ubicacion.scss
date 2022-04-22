@@ -2,7 +2,7 @@
 
 .contenedorCentradoUbicacion{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -13,6 +13,27 @@
     width: 350px;
     padding-top: 10px;
     margin-bottom: 20px;
+}
+
+.informacionContacto{
+    list-style-type: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+}
+
+/* Iconos Redes */
+
+#id_redes {
+    height: 30px;
+    margin-right: 20px;
+}
+.LogoMail{
+    width: 32px;
 }
 .textoNombre {
     font-weight: bold;

@@ -12,9 +12,10 @@ h2 {
 .botonalquiler, .botonventa {
   text-decoration: none;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 16px;
   padding: 3px;
   color: #28a745;
+  opacity: 0.8;
   border-radius: 5px;
   border-style: solid;
   border-color: #28a745;
@@ -57,8 +58,7 @@ h2 {
 .contenedorImg {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 5px; }
+  align-items: center; }
 
 /* MIXINS PARA LOS TÍTULOS */
 .titulo h1 {
@@ -67,7 +67,8 @@ h2 {
   font-weight: bold;
   margin: 40px;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 8rem; }
 
 .titulo p {
   color: #333333;
@@ -90,12 +91,18 @@ body {
 .barraPropia {
   width: 100%;
   height: 80px;
-  background-color: #2f4f4f; }
+  background-image: url(../IMG/fondoHeaderFooter.png);
+  background-repeat: repeat;
+  opacity: 0.9;
+  position: fixed;
+  top: 0px;
+  z-index: 1000; }
 
 #color {
   color: ghostwhite;
   font-size: 20px;
-  background-color: #2f4f4f; }
+  background-image: url(../IMG/fondoHeaderFooter.png);
+  background-repeat: repeat; }
 
 .tituloIMG {
   background-image: url(../IMG/header.jpg);
@@ -111,7 +118,11 @@ body {
 
 /* MAIN ANUNCIOS PROPIEDADES */
 .anuncio {
-  border: 2px solid #333333;
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   height: 650px;
   width: 370px;
   margin-top: 20px; }
@@ -129,40 +140,46 @@ body {
 #id_img {
   height: auto;
   max-height: 200px;
-  width: 95%; }
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
 
-/* --- ICONOS REDES SOCIALES Y UBICACIÓN --- */
+/* Iconos Cards */
 #id_icono {
   height: 40px;
   margin-top: 10px; }
-
-#id_redes {
-  height: 35px; }
-
-#id_redessociales {
-  width: 6%; }
 
 /* SECCION NOSOTROS */
 .sobreNosotros {
   display: flex;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  width: auto; }
+
+.nosotrosImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .nosotrosImagen img {
   height: auto;
-  width: 90%;
-  margin-left: 20px; }
+  width: 100%; }
 
 .nosotrosDescripcion p {
   color: #333333;
-  font-size: 18px;
-  text-align: justify;
-  padding-right: 10px; }
+  font-size: 16px;
+  display: inline-block;
+  line-height: 30px; }
+
+.nivelLectura {
+  font-weight: bold;
+  color: darkgoldenrod;
+  opacity: 0.8; }
 
 /* SECCION UBICACION  */
 .contenedorCentradoUbicacion {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center; }
 
 .datosUbicacion {
@@ -173,6 +190,22 @@ body {
   padding-top: 10px;
   margin-bottom: 20px; }
 
+.informacionContacto {
+  list-style-type: none; }
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px; }
+
+/* Iconos Redes */
+#id_redes {
+  height: 30px;
+  margin-right: 20px; }
+
+.LogoMail {
+  width: 32px; }
+
 .textoNombre {
   font-weight: bold; }
 
@@ -181,7 +214,8 @@ body {
 
 /*   FOOTER   */
 footer {
-  background-color: #2f4f4f;
+  background-image: url(../IMG/fondoHeaderFooter.png);
+  background-repeat: repeat;
   margin-top: 50px;
   height: 80px;
   width: 100%; }
@@ -201,19 +235,25 @@ footer {
 .iconosredes {
   display: flex;
   justify-content: center;
-  background-color: #2f4f4f;
+  background-image: url(../IMG/fondoHeaderFooter.png);
+  background-repeat: repeat;
   padding: 0px; }
 
 .iconosredes img {
-  margin: 15px; }
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0 1px 12px goldenrod; }
+
+#id_redessociales {
+  width: 6%; }
 
 /*   ANIMACIONES  */
 /* Transiciones aplicadas a los títulos  */
 .transition {
-  transition: font-size 3s; }
+  transition: font-size 4s; }
 
 .transition:hover {
-  font-size: 35px; }
+  font-size: 33px; }
 
 /* Animación footer iconos redes */
 .iconosredes img:hover {
@@ -270,8 +310,7 @@ select {
 
 .colorbtn {
   color: ghostwhite;
-  background-color: #28a745;
-  margin-left: 10px; }
+  background-color: darkgoldenrod; }
 
 /* --------- Media Query para Desk --------- */
 @media screen and (min-width: 1024px) {
@@ -279,3 +318,7 @@ select {
     margin: auto;
     width: 55%;
     padding: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .nosotrosDescripcion p {
+    margin-top: 20px; } }
