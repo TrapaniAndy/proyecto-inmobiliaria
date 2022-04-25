@@ -28,7 +28,7 @@ label {
 
 input {
     margin: auto;
-    background-color: #e1e1e1;
+    background-color: #d2d2d1;
     border-radius: 5px;
     border: none;
     width: 100%;
@@ -51,6 +51,6 @@ select {
 }
 
 .colorbtn{
-    color: ghostwhite;
+    color: $colorSecundario;
     background-color: $colorBotonVenta;
 }

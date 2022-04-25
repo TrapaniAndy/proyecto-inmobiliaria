@@ -15,28 +15,18 @@
     margin-bottom: 20px;
 }
 
-.informacionContacto{
+.informacion{
     list-style-type: none;
-}
-
-.info{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
-
+    align-items: baseline;
 }
 
-/* Iconos Redes */
+/* Iconos de Contacto */
 
 #id_redes {
-    height: 30px;
     margin-right: 20px;
-}
-.LogoMail{
-    width: 32px;
-}
-.textoNombre {
-    font-weight: bold;
 }
 
 .mapa{

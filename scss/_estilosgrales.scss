@@ -11,3 +11,7 @@ body {
     background-image: url(../IMG/board.png);
     font-family: "Titillium Web", sans-serif;
 }
+
+::selection{
+    background-color: $colorSubrayado;
+}

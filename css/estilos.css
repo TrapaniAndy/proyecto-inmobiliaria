@@ -46,7 +46,8 @@ h2 {
   list-style-type: none;
   flex-direction: row;
   align-items: center;
-  padding-left: 0px; }
+  padding-left: 0px;
+  margin-top: 15px; }
 
 .botonPropiedad {
   display: flex;
@@ -87,6 +88,9 @@ body {
   background-image: url(../IMG/board.png);
   font-family: "Titillium Web", sans-serif; }
 
+::selection {
+  background-color: darkgrey; }
+
 /* HEADER */
 .barraPropia {
   width: 100%;
@@ -119,13 +123,16 @@ body {
 /* MAIN ANUNCIOS PROPIEDADES */
 .anuncio {
   border-radius: 8px;
-  backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   height: 650px;
   width: 370px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  transition: all 400ms ease; }
+  .anuncio:hover {
+    box-shadow: 5 5px 20px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%); }
 
 .texto p {
   margin-top: 10px;
@@ -133,9 +140,18 @@ body {
   padding: 7px;
   text-align: justify; }
 
+.iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px; }
+  .iconos p {
+    margin-left: 14px;
+    font-size: 17px; }
+
 .precio {
   font-weight: bold;
-  margin: 5px; }
+  text-align: center; }
 
 #id_img {
   height: auto;
@@ -160,16 +176,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.nosotrosImagen img {
-  height: auto;
-  width: 100%; }
+  .nosotrosImagen img {
+    height: auto;
+    width: 100%; }
 
 .nosotrosDescripcion p {
   color: #333333;
   font-size: 16px;
   display: inline-block;
-  line-height: 30px; }
+  line-height: 30px;
+  text-align: justify; }
 
 .nivelLectura {
   font-weight: bold;
@@ -190,24 +206,16 @@ body {
   padding-top: 10px;
   margin-bottom: 20px; }
 
-.informacionContacto {
-  list-style-type: none; }
-
-.info {
+.informacion {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  align-items: baseline; }
 
-/* Iconos Redes */
+/* Iconos de Contacto */
 #id_redes {
-  height: 30px;
   margin-right: 20px; }
-
-.LogoMail {
-  width: 32px; }
-
-.textoNombre {
-  font-weight: bold; }
 
 .mapa {
   height: 300px; }
@@ -242,18 +250,11 @@ footer {
 .iconosredes img {
   margin: 15px;
   border-radius: 20px;
-  box-shadow: 0 1px 12px goldenrod; }
+  box-shadow: 0 1px 6px goldenrod; }
 
 #id_redessociales {
-  width: 6%; }
-
-/*   ANIMACIONES  */
-/* Transiciones aplicadas a los títulos  */
-.transition {
-  transition: font-size 4s; }
-
-.transition:hover {
-  font-size: 33px; }
+  width: 6%;
+  background-color: rgba(255, 255, 255, 0.3); }
 
 /* Animación footer iconos redes */
 .iconosredes img:hover {
@@ -290,7 +291,7 @@ label {
 
 input {
   margin: auto;
-  background-color: #e1e1e1;
+  background-color: #d2d2d1;
   border-radius: 5px;
   border: none;
   width: 100%;
@@ -319,6 +320,7 @@ select {
     width: 55%;
     padding: 10px; } }
 
+/* Media Query para Tablet y Mobil  */
 @media screen and (max-width: 767px) {
   .nosotrosDescripcion p {
     margin-top: 20px; } }
