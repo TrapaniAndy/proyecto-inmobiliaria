@@ -3,29 +3,39 @@
 footer {
     background-image: url(../IMG/fondoHeaderFooter.png);
     background-repeat: repeat;
-    margin-top: 50px;
-    height: 80px;
-    width: 100%;
+    margin-top: 80px;
+    height: 20%;
+/*     position: relative; */
+
 }
+
 .contenedorFooter{
     display: flex;
-    height: 80px;
+    height: auto;
+    width: 100%;
     justify-content: center;
     align-items: center;
+/*     position: absolute;
+    bottom: 0; */
+
 }
 
 .copyright {
     color: ghostwhite;
-    font-size: 18px;
+    font-size: 1rem;
     margin: auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .iconosredes{
     display: flex;
     justify-content: center;
-    background-image: url(../IMG/fondoHeaderFooter.png);
-    background-repeat: repeat;
+    align-items: center;
+    height: auto; 
+/*     background-image: url(../IMG/fondoHeaderFooter.png);
+    background-repeat: repeat; */
     padding: 0px;
 }
 
@@ -47,7 +57,7 @@ footer {
         &:hover{
             animation: icono .5s ease;
         }
-    }
+    }  
 }
 
 @keyframes icono{
