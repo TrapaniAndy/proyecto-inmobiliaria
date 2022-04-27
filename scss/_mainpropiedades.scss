@@ -17,6 +17,14 @@
     }
 }
 
+#id_img {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
 .texto{
     p {
         margin-top: 10px;
@@ -25,6 +33,7 @@
         text-align: justify;
     }
 }
+
 .iconos{
     display: flex;
     justify-content: space-between;
@@ -39,18 +48,25 @@
     font-weight: bold;
     text-align: center;
 }
+/*  BOTONES DE CARS  */
 
-#id_img {
-    height: auto;
-    max-height: 200px;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.botonCard {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 3px;
+    color: $colorBotonCard;
+    opacity: 0.8;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: $colorBotonCard;
+    background-color: transparent;
+    &:hover{
+        color: $colorSecundario;
+        background-color: $colorBotonCard;
+        box-shadow: 5px 5px 5px lightslategrey;     
+    }
 }
 
-/* Iconos Cards */
 
-#id_icono {
-    height: 40px;
-    margin-top: 10px;
-}
+
